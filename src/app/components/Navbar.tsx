@@ -42,7 +42,7 @@ const Navbar = () => {
                         </motion.div>
 
                         <div className="hidden md:flex items-center space-x-8 bg-white/5 backdrop-blur-md rounded-full px-6 py-3 border border-white/10">
-                            {["Home", "About", "Trails", "Visit", "Contact"].map((item, index) => (
+                            {["Home", "About", "Trails", "Visit", "Contact"].map((item) => (
                                 <motion.a
                                     key={item}
                                     href={`#${item.toLowerCase()}`}

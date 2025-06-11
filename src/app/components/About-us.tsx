@@ -17,10 +17,10 @@ const About = () => {
                         className="text-center mb-16"
                     >
                         <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-emerald-800 to-green-600 bg-clip-text text-transparent">
-                            Nature's Masterpiece
+                            Natures Masterpiece
                         </h2>
                         <p className="text-xl text-emerald-700 max-w-3xl mx-auto leading-relaxed">
-                            Alabama's forests are living galleries where every season paints a new masterpiece
+                            Alabamas forests are living galleries where every season paints a new masterpiece
                         </p>
                     </motion.div>
 

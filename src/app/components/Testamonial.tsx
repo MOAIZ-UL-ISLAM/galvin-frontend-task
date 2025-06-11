@@ -2,8 +2,29 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Star, Quote, Leaf, TreePine, Camera, Heart } from 'lucide-react'
+import { LucideIcon } from 'lucide-react'
 
-const testimonials = [
+// Define the testimonial type
+interface Testimonial {
+    id: number;
+    name: string;
+    location: string;
+    text: string;
+    rating: number;
+    image: string;
+    experience: string;
+    icon: LucideIcon;
+    color: 'emerald' | 'green' | 'amber' | 'teal';
+}
+
+// Define the component props type
+interface TestimonialCardProps {
+    testimonial: Testimonial;
+    isActive: boolean;
+    onClick: () => void;
+}
+
+const testimonials: Testimonial[] = [
     {
         id: 1,
         name: "Sarah Mitchell",
@@ -50,7 +71,7 @@ const testimonials = [
     }
 ]
 
-const TestimonialCard = ({ testimonial, isActive, onClick }) => {
+const TestimonialCard = ({ testimonial, isActive, onClick }: TestimonialCardProps) => {
     const IconComponent = testimonial.icon
 
     return (
@@ -127,8 +148,8 @@ const TestimonialCard = ({ testimonial, isActive, onClick }) => {
     )
 }
 
-const Testimonials = () => {
-    const [activeTestimonial, setActiveTestimonial] = useState(0)
+const Testimonials: React.FC = () => {
+    const [activeTestimonial, setActiveTestimonial] = useState<number>(0)
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -192,7 +213,7 @@ const Testimonials = () => {
                         Forest Stories
                     </h2>
                     <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                        Discover what fellow nature lovers have experienced in Alabama's pristine wilderness
+                        Discover what fellow nature lovers have experienced in Alabamas pristine wilderness
                     </p>
                 </motion.div>
 
@@ -283,3 +304,4 @@ const Testimonials = () => {
 }
 
 export default Testimonials
+export type { Testimonial, TestimonialCardProps }

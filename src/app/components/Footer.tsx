@@ -22,7 +22,7 @@ const Footer = () => {
                                 <span className="text-2xl font-bold">Alabama Forests</span>
                             </div>
                             <p className="text-emerald-200 leading-relaxed mb-4">
-                                Discover the untamed beauty of Alabama's pristine wilderness areas.
+                                Discover the untamed beauty of Alabamas pristine wilderness areas.
                             </p>
                             <div className="flex space-x-4">
                                 {[
@@ -92,7 +92,7 @@ const Footer = () => {
                         className="border-t border-emerald-800 mt-12 pt-8 text-center"
                     >
                         <p className="text-emerald-300">
-                            © {new Date().getFullYear()} Alabama Forests. Preserving nature's beauty for future generations.
+                            © {new Date().getFullYear()} Alabama Forests. Preserving natures beauty for future generations.
                         </p>
                     </motion.div>
                 </div>

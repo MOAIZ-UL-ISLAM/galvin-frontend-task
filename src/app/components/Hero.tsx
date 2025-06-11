@@ -85,7 +85,7 @@ const Hero = () => {
                                     backgroundClip: "text",
                                 }}
                             >
-                                Alabama's
+                                Alabamas
                             </motion.span>
                             <br />
                             Wild Beauty
