@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Design Process
 
-## Getting Started
+### Wireframing or Sketching
+I'm not very confident in design, so this layout was based on my imagination with the help of AI tools for guidance and ideas.
 
-First, run the development server:
+### Color Scheme and Font Choices
+Same as above — I relied on AI and basic defaults, keeping things clean and minimal.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Responsiveness Strategy
+I used Tailwind CSS to handle responsiveness by applying utility classes like `sm:`, `md:`, and `lg:`. Tailwind makes it easy to adapt layouts for different screen sizes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Animation Approach
+I used Framer Motion to add smooth, minimal animations for transitions and hover effects. It integrates well with React and makes animations simple to manage.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Libraries or Frameworks Used
+- **Tailwind CSS**: for fast and utility-first styling.
+- **Framer Motion**: for clean and modern animations.
+- **Lucide React**: for using consistent and customizable icons.
