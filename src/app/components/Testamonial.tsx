@@ -130,7 +130,7 @@ const TestimonialCard = ({ testimonial, isActive, onClick }: TestimonialCardProp
 
             {/* Testimonial Text */}
             <p className="text-white/90 mb-6 leading-relaxed text-sm md:text-base font-medium">
-                "{testimonial.text}"
+                {testimonial.text}
             </p>
 
             {/* Profile */}
@@ -248,7 +248,7 @@ const Testimonials: React.FC = () => {
                                 </div>
 
                                 <blockquote className="text-2xl md:text-3xl text-white/90 text-center mb-8 leading-relaxed font-medium">
-                                    "{testimonials[activeTestimonial].text}"
+                                    {testimonials[activeTestimonial].text}
                                 </blockquote>
 
                                 <div className="flex items-center justify-center">
